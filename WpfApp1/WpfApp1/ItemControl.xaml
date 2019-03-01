@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.ItemControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="ItemControl" Height="450" Width="800">
+    <Grid>
+        <ItemsControl Name="todoList" ItemsSource="{Binding TodoList}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="5,5,5,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Name}"/>
+                        <TextBlock TextWrapping="Wrap" Grid.Column="1" Text="{Binding Decription}"/>
+                        <ProgressBar Height="20"  Foreground="Red"  Grid.Column="2" Minimum="0" Maximum="5" Value="{Binding Priority}" />
+                        <ProgressBar Height="20" Margin="5,0,0,0" Grid.Column="3" Minimum="0" Maximum="100" Value="{Binding CompletePercent}" />
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\bin\Debug\MVVM.exe.config
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\bin\Debug\MVVM.exe
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\bin\Debug\MVVM.pdb
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MVVM.csprojAssemblyReference.cache
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MainWindow.g.cs
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\App.g.cs
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MVVM_MarkupCompile.cache
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MVVM_MarkupCompile.lref
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MainWindow.baml
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MVVM.g.resources
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MVVM.Properties.Resources.resources
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MVVM.csproj.GenerateResource.cache
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MVVM.csproj.CoreCompileInputs.cache
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MVVM.exe
+C:\Users\VNUSER\Desktop\NguyenngocAnh\MVVM\MVVM\obj\Debug\MVVM.pdb
