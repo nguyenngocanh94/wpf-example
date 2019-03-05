@@ -53,7 +53,8 @@ namespace Mics
         private void ASync_Click(object sender, RoutedEventArgs e)
         {
             progress.Value = 0;
-            result.Items.Clear();                    
+            result.Items.Clear();
+            if(!worker.IsBusy)
             worker.RunWorkerAsync(TheDirectory);
         }
 
@@ -62,7 +63,8 @@ namespace Mics
         {
             string location = (string)e.Argument;
             sum = Directory.GetFiles(location, "*", SearchOption.AllDirectories).Length;
-            GetAllChild(location, e, 0);
+            var fileCount = 0;
+            GetAllChild(location, e, ref fileCount);
         }
 
         void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -89,7 +91,7 @@ namespace Mics
             worker.CancelAsync();
         }
 
-        private void GetAllChild(string location, DoWorkEventArgs e, int filesCount)
+        private void GetAllChild(string location, DoWorkEventArgs e, ref int filesCount)
         {
             
             try
@@ -104,10 +106,13 @@ namespace Mics
                         return;
                     }
 
-                    Dispatcher.Invoke(() => { result.Items.Add(f); });
-                    filesCount++;
+                    filesCount = filesCount + 1;
+                    var tempCount = filesCount;
                     System.Threading.Thread.Sleep(1);
-                    Dispatcher.Invoke(()=> { progress.Value = Convert.ToInt32(((double)filesCount / sum) * 100); });
+                    Dispatcher.Invoke(()=> {
+                        result.Items.Add(f);                       
+                        progress.Value = Convert.ToInt32(((double)tempCount / sum) * 100);
+                    });
                 }
 
                 foreach (string d in Directory.GetDirectories(location))
@@ -119,7 +124,7 @@ namespace Mics
                         e.Result = filesCount;
                         return;
                     }
-                    GetAllChild(d, e, filesCount);
+                    GetAllChild(d, e,ref filesCount);
                 }
             }
             catch (Exception ex)
@@ -138,7 +143,7 @@ namespace Mics
             FolderBrowserDialog openFileDialog = new FolderBrowserDialog();
             DialogResult result = openFileDialog.ShowDialog();
             
-            // cant not compact this include
+            // i cant not compact this include
             if (result == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(openFileDialog.SelectedPath))
             {
                 TheDirectory = openFileDialog.SelectedPath;

@@ -1,0 +1,6 @@
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\bin\Debug\ViewModel.dll
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\bin\Debug\ViewModel.pdb
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\obj\Debug\ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\obj\Debug\ViewModel.dll
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\obj\Debug\ViewModel.pdb
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\obj\Debug\ViewModel.csprojAssemblyReference.cache

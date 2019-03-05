@@ -16,3 +16,12 @@ C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\obj\Debug\Mics.csproj.CoreCompil
 C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\obj\Debug\Mics.exe
 C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\obj\Debug\Mics.pdb
 C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\obj\Debug\Audio.g.cs
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\obj\Debug\Audio.baml
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\ViewModel.dll
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\ViewModel.pdb
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\obj\Debug\Mics.csproj.CopyComplete
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\System.Windows.Interactivity.xml
