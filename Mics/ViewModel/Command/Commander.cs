@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace ViewModel
+namespace ViewModel.Command
 {
-    class Command : ICommand
+    class Commander : ICommand
     {
         private Action commandAction;
         public event EventHandler CanExecuteChanged;
 
-        public Command(Action commandAction)
+        public Commander(Action commandAction)
         {
             this.commandAction = commandAction;
         }

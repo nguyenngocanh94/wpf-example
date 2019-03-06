@@ -4,3 +4,8 @@ C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\obj\Debug\ViewModel.csproj.
 C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\obj\Debug\ViewModel.dll
 C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\obj\Debug\ViewModel.pdb
 C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\obj\Debug\ViewModel.csprojAssemblyReference.cache
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\bin\Debug\Model.dll
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\bin\Debug\SimpleIoC.dll
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\bin\Debug\Model.pdb
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\bin\Debug\SimpleIoC.pdb
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\ViewModel\obj\Debug\ViewModel.csproj.CopyComplete

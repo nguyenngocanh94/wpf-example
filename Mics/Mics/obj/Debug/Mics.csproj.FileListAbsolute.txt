@@ -25,3 +25,7 @@ C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\Microsoft.Expression.I
 C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\System.Windows.Interactivity.dll
 C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\Microsoft.Expression.Interactions.xml
 C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\Model.dll
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\SimpleIoC.dll
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\Model.pdb
+C:\Users\VNUSER\Desktop\NguyenngocAnh\Mics\Mics\bin\Debug\SimpleIoC.pdb

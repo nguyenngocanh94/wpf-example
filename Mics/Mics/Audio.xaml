@@ -23,7 +23,8 @@
             <Button Name="btnSelect" Content="Select">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="Click">
-                        <i:InvokeCommandAction Command="{Binding SelectFile}" />
+                        <i:InvokeCommandAction Command="{Binding Open}" />
+                        <i:InvokeCommandAction Command="{Binding SelectFile}" CommandParameter="{Binding File}"/>
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
             </Button>

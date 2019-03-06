@@ -118,6 +118,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{4dff3f86-8c67-45b9-a8f9-629567e9b725}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleIoC\SimpleIoC.csproj">
+      <Project>{6db2e457-1faf-4a91-8074-7242dfb80ea3}</Project>
+      <Name>SimpleIoC</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ViewModel\ViewModel.csproj">
       <Project>{fb0e056b-11bc-4e2a-92c9-040299c9e482}</Project>
       <Name>ViewModel</Name>

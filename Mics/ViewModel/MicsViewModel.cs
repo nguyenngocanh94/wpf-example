@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Model.Utilities;
+using SimpleIoC;
+using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Threading;
+using ViewModel.Command;
 
 namespace ViewModel
 {
@@ -17,7 +20,8 @@ namespace ViewModel
         public ICommand Stop { get; set; }
         public ICommand Seek { get; set; }       
         public ICommand Seeked { get; set; }       
-
+        public IDialogOpenner Open { get; set; }
+        public SelectedFileRequest File { get; set; }
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void NotifyPropertyChanged(string propName)
@@ -59,39 +63,37 @@ namespace ViewModel
 
         public MicsViewModel()
         {
-            media = new MediaPlayer();            
+            media = new MediaPlayer();
+            File = new SelectedFileRequest();
             // bind commmand
-            SelectFile = new Command(() => {
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Filter = "MP3 files (*.mp3)|*.mp3|All files (*.*)|*.*";
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                    media.Open(new Uri(openFileDialog.FileName));
-
+            SelectFile = new Commander(() => {
+                media.Open(new Uri(File.FileName));
                 DispatcherTimer timer = new DispatcherTimer();
                 timer.Interval = TimeSpan.FromSeconds(1);
                 timer.Tick += timer_Tick;
                 timer.Start();
             });
 
+            Open = DIContainer.Resolve<IDialogOpenner>();
 
-            Play = new Command(()=> {
+            Play = new Commander(()=> {
                 media.Play();
             });
 
-            Stop = new Command(()=> {
+            Stop = new Commander(()=> {
                 media.Stop();
             });
 
-            Pause = new Command(()=> {
+            Pause = new Commander(()=> {
                 media.Pause();
             });
 
-            Seek = new Command(()=> {
+            Seek = new Commander(()=> {
                 isDraging = true;
                 
             });
 
-            Seeked = new Command(() => {
+            Seeked = new Commander(() => {
                 isDraging = false;
                 media.Position = TimeSpan.FromSeconds(CurrentTime);
             });
@@ -99,7 +101,7 @@ namespace ViewModel
 
         void timer_Tick(object sender, EventArgs e)
         {
-            if(media.Curren)
+            
 
             if (media.Source != null && media.NaturalDuration.HasTimeSpan && !isDraging)
             {
